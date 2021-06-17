@@ -8,6 +8,8 @@ import Form from "react-bootstrap/Form"
 export const LessonNoteForm = () => {
     const history = useHistory()
 
+    const { students, getStudents } = useContext(StudentUserContext)
+    
     const currentUserId = parseInt(sessionStorage.getItem("lu_token"))
     const [isLoading, setIsLoading] = useState(true)
 
