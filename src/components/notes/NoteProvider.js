@@ -9,7 +9,8 @@ export const NoteProvider = (props) => {
 
         return fetch("http://localhost:8000/notes", {
             headers:{
-                "Authorization": `Token ${localStorage.getItem("lu_token")}`
+                "Authorization": `Token ${localStorage.getItem("
+                fa2eba9be8282d595c997ee5cd49f2ed31f65bed")}`
             }
         })
             .then(response => response.json())
