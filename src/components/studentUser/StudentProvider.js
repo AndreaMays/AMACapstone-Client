@@ -7,7 +7,7 @@ export const StudentProvider = (props) => {
 
     const getStudents = () => {
 
-        return fetch("http://localhost:8000/students", {
+        return fetch("http://localhost:8000/studentlist", {
             headers:{
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`
             }
@@ -17,7 +17,7 @@ export const StudentProvider = (props) => {
         }
 
     const createStudents = (student) => {
-        return fetch("http://localhost:8000/students", {
+        return fetch("http://localhost:8000/studentlist", {
             method: "POST",
             headers: {
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`,
@@ -28,7 +28,7 @@ export const StudentProvider = (props) => {
     }
 
     const deleteStudent = studentId => {
-        return fetch(`http://localhost:8000/students/${ studentId }`, {
+        return fetch(`http://localhost:8000/studentlist/${ studentId }`, {
             method: "DELETE",
             hearders: {
                 "Auhtorization": `Token ${localStorage.getItem("lu_token")}`

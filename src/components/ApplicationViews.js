@@ -2,6 +2,8 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { NoteProvider } from "./notes/NoteProvider"
 import { LessonNoteForm } from "./notes/NoteForm"
+import { LessonNoteList} from "./notes/NoteList"
+import { WeeklyNoteCard } from "./notes/Note"
 
 export const ApplicationViews = () => {
     return (
@@ -11,9 +13,9 @@ export const ApplicationViews = () => {
     </Route>     */}
 
     <NoteProvider>
-    {/* <Route exact path="/notes">
-        <NoteList />
-    </Route> */}
+        <Route exact path="/studentnotes">
+            <LessonNoteList/>
+      </Route>
 
         <Route path="/notes/create">
             <LessonNoteForm />
