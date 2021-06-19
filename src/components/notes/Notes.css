@@ -32,3 +32,10 @@
     border-radius: 10px;   
     flex-direction: row;
 }
+
+.date_notes {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: larger;
+    
+}
