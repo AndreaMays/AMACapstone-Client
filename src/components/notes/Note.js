@@ -28,27 +28,11 @@ export const WeeklyNoteCard = ({week}) => {
 
   <Accordion.Toggle as={Button} variant="link" eventKey="0">
   {week.date}
-   </Accordion.Toggle>
+  </Accordion.Toggle>
 </Card.Header>
 <Accordion.Collapse eventKey="0">
   <Card.Body>
-  {
-                notes
-                ?
-                notes.map(Lnotes => {
-                    return <section key={notes.id} className="lessonNotes">
-                        <div className="date_notes">Date: {Lnotes.date}</div>
-                        <div className="scale_notes">Scales: {Lnotes.scale_notes}</div>
-                        <div className="memory_notes">Memory Songs: {Lnotes.memory_notes}</div>
-                        <div className="song1_notes">Primary Song: {Lnotes.song1_notes}</div>
-                        <div className="song2_notes">Second Song: {Lnotes.song2_notes}</div>
-                        <div className="admin_note_id">Admin Id: {Lnotes.admin}</div>
-                        <div className="id_notes"> Note Id: {Lnotes.id} </div>
 
-                    </section>
-                })
-                :<div>loading</div>
-}
   </Card.Body>
 </Accordion.Collapse>
 </Card>

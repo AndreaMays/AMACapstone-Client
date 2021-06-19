@@ -3,6 +3,8 @@ import { useHistory } from "react-router"
 import { LessonNotesContext } from "./NoteProvider"
 import { StudentUserContext } from "../studentUser/StudentProvider"
 import { WeeklyNoteCard } from "./Note"
+import { Button, Card, Accordion } from "react-bootstrap"
+import "./Notes.css"
 
 export const LessonNoteList = (prop) => {
     const {getNotes, notes, deleteNotes} = useContext(LessonNotesContext)
@@ -27,7 +29,7 @@ export const LessonNoteList = (prop) => {
         <>
         <article className="noteList">
             <header className="notes_header">
-                <h2>Student Lesson Notes </h2>
+                <h2 className="note_header">Student Lesson Notes </h2>
             </header>
 
             {/* {
@@ -41,23 +43,43 @@ export const LessonNoteList = (prop) => {
             })
             :<div>loading</div>
         }  */}
+  {
+                notes
+                ?
+                notes.map(Lnotes => {
+                    return   <Accordion className="row weeklyCard ">
+                    <section key={notes.id} className="lessonNotes">
+                        <Card  className="card-group weeklyMenuCard">
+                    <Card.Header>
 
+                        <Accordion.Toggle as={Button} variant="link" eventKey="0" className="note_toggle">
+                        <div className="date_notes">Date: {Lnotes.date}</div>
+                        </Accordion.Toggle>
+                            </Card.Header>
+                            <Accordion.Collapse eventKey="0">                                        
+                            <Card.Body className="note_card">
+                        <div className="scale_notes notes">Scales: {Lnotes.scale_notes}</div>
+                        <br></br>
+                        <div className="memory_notes notes">Memory Songs: {Lnotes.memory_notes}</div>
+                        <br></br>
+                        <div className="song1_notes notes">Primary Song: {Lnotes.song1_notes}</div>
+                        <br></br>
+                        <div className="song2_notes notes">Second Song: {Lnotes.song2_notes}</div>
+                        <br></br>
+                        <div className="admin_note_id notes">Admin Id: {Lnotes.admin}</div>
+                        <br></br>
+                        <div className="id_notes notes"> Note Id: {Lnotes.id} </div>
+                            </Card.Body>
+                        </Accordion.Collapse>
+                        </Card>
+                    </section>
+                    </Accordion>                 
+                })
+                                :<div>loading</div>
+}
 
         </article>
-        <div class="lessonNotesCard">
-        {/* Below we are mapping through "groceryMenus". Inside the ".map()" function,  we set a variable to 
-        we are setting a variable to "weeklyMenu. Then we are looping through each object in the array pulling out the 
-    "weeklyMenu.id" and the "weeklyMenu". Also I am passing the yellow "week" into the "groceryCard" component.  */}
-        {
-            notes.map(note => {
-                //  console.log(pItem)
-                return <WeeklyNoteCard key={note.id} week={note}/>
-            })
-        }      
-    </div>
- 
-
-      
+     
         </>
     )
 }
