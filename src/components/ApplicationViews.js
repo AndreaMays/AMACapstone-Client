@@ -4,6 +4,8 @@ import { NoteProvider } from "./notes/NoteProvider"
 import { LessonNoteForm } from "./notes/NoteForm"
 import { LessonNoteList} from "./notes/NoteList"
 import { WeeklyNoteCard } from "./notes/Note"
+import { Steps } from "./progress/ProgressBar"
+
 
 export const ApplicationViews = () => {
     return (
@@ -15,6 +17,9 @@ export const ApplicationViews = () => {
     <NoteProvider>
         <Route exact path="/studentnotes">
             <LessonNoteList/>
+            </Route>
+        <Route exact path="/progress">
+            <Steps/>
       </Route>
 
         <Route path="/notes/create">

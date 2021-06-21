@@ -51,7 +51,7 @@ export const LessonNoteList = (prop) => {
                     <section key={notes.id} className="lessonNotes">
                         <Card  className="card-group weeklyMenuCard">
                     <Card.Header>
-
+                            <div className="note_name">Student Name: {Lnotes.student_user.user.first_name}</div>
                         <Accordion.Toggle as={Button} variant="link" eventKey="0" className="note_toggle">
                         <div className="date_notes">Date: {Lnotes.date}</div>
                         </Accordion.Toggle>

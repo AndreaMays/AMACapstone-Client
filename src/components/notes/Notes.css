@@ -25,10 +25,16 @@
 }
 
 .note_toggle {
-    width: 500px;
+    width: 400px;
     height: 260px;
     box-shadow: 4px 4px 20px rgb(165, 141, 88);
     transition: 0.5s;
     border-radius: 10px;   
     flex-direction: row;
+}
+
+.date_notes {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: larger;
 }
