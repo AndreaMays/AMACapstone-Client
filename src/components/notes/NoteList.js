@@ -23,7 +23,6 @@ export const LessonNoteList = (prop) => {
 
     // console.log("STUDENTS", students)
 
-    const dateTime = new Date().toISOString()
 
     return (
         <>

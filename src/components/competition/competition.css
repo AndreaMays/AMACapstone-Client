@@ -1,0 +1,6 @@
+.card-body {
+    transition: 0.5s;
+    border-radius: 10px;   
+    flex-direction: row;
+    border-color: brown;
+}

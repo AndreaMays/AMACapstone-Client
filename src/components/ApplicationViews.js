@@ -5,6 +5,8 @@ import { LessonNoteForm } from "./notes/NoteForm"
 import { LessonNoteList} from "./notes/NoteList"
 import { WeeklyNoteCard } from "./notes/Note"
 import { Steps } from "./progress/ProgressBar"
+import {CompetitionProvider} from "./competition/CompetitionProvider"
+import { CompetitionList } from "./competition/CompetitionList"
 
 
 export const ApplicationViews = () => {
@@ -14,7 +16,8 @@ export const ApplicationViews = () => {
         <Home />
     </Route>     */}
 
-    <NoteProvider>
+<NoteProvider>
+    <CompetitionProvider>
         <Route exact path="/studentnotes">
             <LessonNoteList/>
             </Route>
@@ -26,9 +29,11 @@ export const ApplicationViews = () => {
             <LessonNoteForm />
         </Route>
     
-    </NoteProvider>
-    
-        
+        <Route exact path="/competitionlists">  
+            <CompetitionList />
+        </Route>
+    </CompetitionProvider>
+</NoteProvider>       
                 <main style={{
                     margin: "5rem 2rem",
                     lineHeight: "1.75rem"

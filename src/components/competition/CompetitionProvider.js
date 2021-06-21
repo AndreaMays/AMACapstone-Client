@@ -2,12 +2,12 @@ import React, { useState } from "react"
 
 export const CompetitionContext = React.createContext()
 
-export const NoteProvider = (props) => {
+export const CompetitionProvider = (props) => {
     const [competitions, setCompetitions] = useState([])
 
     const getCompetitions = () => {
 
-        return fetch("http://localhost:8000/competitions", {
+        return fetch("http://localhost:8000/competitionlists", {
             headers:{
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`
             }
@@ -17,7 +17,7 @@ export const NoteProvider = (props) => {
         }
     
     const updateCompetition = (competitionObj) => {
-        return fetch(`http://localhost:8000/competitions${competitionObj.id}`, {
+        return fetch(`http://localhost:8000/competitionlists${competitionObj.id}`, {
             method: "PUT",
             headers: {
                 "Authorization": `Token ${localStorage.getItem('lu_token')}`,
@@ -30,7 +30,7 @@ export const NoteProvider = (props) => {
     }
 
     const createCompetition = (competition) => {
-        return fetch("http://localhost:8000/competitions", {
+        return fetch("http://localhost:8000/competitionlists", {
             method: "POST",
             headers: {
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`,
@@ -41,7 +41,7 @@ export const NoteProvider = (props) => {
     }
 
     const deleteCompetition = competitionId => {
-        return fetch(`http://localhost:8000/competitions${ competitionId }`, {
+        return fetch(`http://localhost:8000/competitionlists${ competitionId }`, {
             method: "DELETE",
             hearders: {
                 "Auhtorization": `Token ${localStorage.getItem("lu_token")}`
