@@ -21,7 +21,7 @@ export const NavBar = (props) => {
       <Nav.Link href="progress">Log Progress Bar</Nav.Link>
     </Nav.Item>
     <Nav.Item>
-      <Nav.Link href="/competitions"> Competitions/Awards</Nav.Link>
+      <Nav.Link href="/competitionlists"> Competitions/Awards</Nav.Link>
     </Nav.Item>
     <Nav.Item>
       <Nav.Link href="/message"> Community Message Board</Nav.Link>

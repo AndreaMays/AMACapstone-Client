@@ -2,22 +2,58 @@ import React, {useContext, useEffect } from "react"
 import { useHistory } from "react-router"
 import { CompetitionContext } from "./CompetitionProvider"
 import { StudentUserContext } from "../studentUser/StudentProvider"
-import { Button, ListGroup, Accordion } from "react-bootstrap"
+import { Card } from "react-bootstrap"
+import "./competition.css"
 
 export const CompetitionList = () => {
 
-const {getCompetition, competitions } = useContext(CompetitionContext)
+const {getCompetitions, competitions } = useContext(CompetitionContext)
 
-useEffect(() =>
-    getCompetition()
-)
+useEffect(() => {
+    getCompetitions()
+}, [])
+console.log("Comp", competitions)
 
 return (
-<ListGroup horizontal>
-  <ListGroup.Item>This</ListGroup.Item>
-  <ListGroup.Item>ListGroup</ListGroup.Item>
-  <ListGroup.Item>renders</ListGroup.Item>
-  <ListGroup.Item>horizontally!</ListGroup.Item>
-</ListGroup>
-    )
+    <>
+    <article className="noteList">
+        <header className="notes_header">
+            <h2 className="note_header">Student Competition Info </h2>
+        </header>
+
+{
+    competitions
+    ?
+    competitions.map(competition => {
+        {console.log("HELP", competition)}
+        // <section>
+        // <div>{competition.date}</div>
+        // </section>
+
+
+ return <Card style={{ width: '18rem' }}>
+       <section key={competition.id} className="compNotes"></section>
+  <Card.Body >
+  <Card.Title>Name of Comp: {competition.name_of_comp}</Card.Title>
+  <Card.Subtitle className="mb-2 text-muted">Name: {competition.student_user.user.first_name} {competition.student_user.user.last_name} </Card.Subtitle>
+ 
+<Card.Text>
+    Date: {competition.date}
+    <br></br>
+    Score: {competition.score}
+    <br></br>
+    Award: {competition.award}
+</Card.Text>
+    {/* <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link> */}
+  </Card.Body>
+</Card> 
+})
+:<div>loading</div>
+}
+
+</article>
+
+</>
+)
 }
