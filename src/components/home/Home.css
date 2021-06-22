@@ -1,0 +1,16 @@
+.home {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold;  
+    font-size: 30pt;
+    display: flex;
+    justify-content:  center;
+}
+
+.piano_pic {
+    display: flex;
+    flex-basis: 5%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid blue;
+    justify-content: center;
+}

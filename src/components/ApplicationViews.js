@@ -7,14 +7,15 @@ import { WeeklyNoteCard } from "./notes/Note"
 import { Steps } from "./progress/ProgressBar"
 import {CompetitionProvider} from "./competition/CompetitionProvider"
 import { CompetitionList } from "./competition/CompetitionList"
+import { Home } from "./home/Home"
 
 
 export const ApplicationViews = () => {
     return (
     <>
-    {/* <Route exact path="/home">
+    <Route exact path="/home">
         <Home />
-    </Route>     */}
+    </Route>    
 
 <NoteProvider>
     <CompetitionProvider>
