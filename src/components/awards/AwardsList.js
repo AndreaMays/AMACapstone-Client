@@ -11,7 +11,6 @@ const {getAwards, awards } = useContext(AwardContext)
 useEffect(() => {
     getAwards()
 }, [])
-console.log("Awards", awards)
 
 return (
     <>
@@ -24,10 +23,6 @@ return (
     awards
     ?
     awards.map(a => {
-        {console.log("HELP", a)}
-        // <section>
-        // <div>{competition.date}</div>
-        // </section>
 
 
  return <Card style={{ width: '18rem' }}>

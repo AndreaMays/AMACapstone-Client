@@ -8,21 +8,10 @@ import "./Notes.css"
 
 export const LessonNoteList = (prop) => {
     const {getNotes, notes, deleteNotes} = useContext(LessonNotesContext)
-    // const { students, getStudents } = useContext(StudentUserContext)
-
-    const history = useHistory()
-
+ 
     useEffect(() => {
         getNotes()
     }, [])
-    console.log("PRACTICE", notes)
-
-    // useEffect(() => {
-    //     getStudents()
-    // }, [])
-
-    // console.log("STUDENTS", students)
-
 
     return (
         <>
@@ -35,17 +24,6 @@ export const LessonNoteList = (prop) => {
         <h2 className="note_header_title">Student Lesson Notes </h2>
         </section>
 
-            {/* {
-                students
-                ?
-                students.map(student => {
-                    return <section key={students.id} className="studentNames">
-                        <div className="student_firstName">First Name: {student.first_name}</div>
-                        <div className="student_lastName">Last Name: {student.last_name}</div>
-                        </section>
-            })
-            :<div>loading</div>
-        }  */}
   {
                 notes
                 ?

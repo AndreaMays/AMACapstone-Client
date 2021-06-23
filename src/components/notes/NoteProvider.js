@@ -7,7 +7,7 @@ export const NoteProvider = (props) => {
 
     const getNotes = () => {
 
-        return fetch("http://localhost:8000/studentnotes", {
+        return fetch("https://ama-student-portal.herokuapp.com/studentnotes", {
             headers:{
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`
             }
@@ -17,7 +17,7 @@ export const NoteProvider = (props) => {
         }
     
     const updateNote = (noteObj) => {
-        return fetch(`http://localhost:8000/studentnotes/${noteObj.id}`, {
+        return fetch(`https://ama-student-portal.herokuapp.com/studentnotes/${noteObj.id}`, {
             method: "PUT",
             headers: {
                 "Authorization": `Token ${localStorage.getItem('lu_token')}`,
@@ -30,7 +30,7 @@ export const NoteProvider = (props) => {
     }
 
     const createNotes = (note) => {
-        return fetch("http://localhost:8000/studentnotes", {
+        return fetch("https://ama-student-portal.herokuapp.com/studentnotes", {
             method: "POST",
             headers: {
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`,
@@ -41,7 +41,7 @@ export const NoteProvider = (props) => {
     }
 
     const deleteNote = noteId => {
-        return fetch(`http://localhost:8000/studentnotes/${ noteId }`, {
+        return fetch(`https://ama-student-portal.herokuapp.com/studentnotes/${ noteId }`, {
             method: "DELETE",
             hearders: {
                 "Auhtorization": `Token ${localStorage.getItem("lu_token")}`

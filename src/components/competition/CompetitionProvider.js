@@ -7,7 +7,7 @@ export const CompetitionProvider = (props) => {
 
     const getCompetitions = () => {
 
-        return fetch("http://localhost:8000/competitionlists", {
+        return fetch("https://ama-student-portal.herokuapp.com/competitionlists", {
             headers:{
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`
             }
@@ -17,7 +17,7 @@ export const CompetitionProvider = (props) => {
         }
     
     const updateCompetition = (competitionObj) => {
-        return fetch(`http://localhost:8000/competitionlists${competitionObj.id}`, {
+        return fetch(`https://ama-student-portal.herokuapp.com/competitionlists${competitionObj.id}`, {
             method: "PUT",
             headers: {
                 "Authorization": `Token ${localStorage.getItem('lu_token')}`,
@@ -30,7 +30,7 @@ export const CompetitionProvider = (props) => {
     }
 
     const createCompetition = (competition) => {
-        return fetch("http://localhost:8000/competitionlists", {
+        return fetch("https://ama-student-portal.herokuapp.com/competitionlists", {
             method: "POST",
             headers: {
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`,
@@ -41,7 +41,7 @@ export const CompetitionProvider = (props) => {
     }
 
     const deleteCompetition = competitionId => {
-        return fetch(`http://localhost:8000/competitionlists${ competitionId }`, {
+        return fetch(`https://ama-student-portal.herokuapp.com/competitionlists${ competitionId }`, {
             method: "DELETE",
             hearders: {
                 "Auhtorization": `Token ${localStorage.getItem("lu_token")}`

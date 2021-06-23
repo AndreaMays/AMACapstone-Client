@@ -7,7 +7,7 @@ export const AwardProvider = (props) => {
 
     const getAwards = () => {
 
-        return fetch("http://localhost:8000/awardslist", {
+        return fetch("https://ama-student-portal.herokuapp.com/awardslist", {
             headers:{
                 "Authorization": `Token ${localStorage.getItem("lu_token")}`
             }
