@@ -11,24 +11,18 @@ export const NavBar = (props) => {
     <Nav.Item>
       <Nav.Link href="/home">Home</Nav.Link>
     </Nav.Item>
-    <Nav.Item>
-      <Nav.Link href="/about">About</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
+     <Nav.Item>
       <Nav.Link href="studentnotes">Lesson Notes</Nav.Link>
     </Nav.Item>
+ 
     <Nav.Item>
-      <Nav.Link href="progress">Log Progress Bar</Nav.Link>
+      <Nav.Link href="/competitionlists"> Competitions</Nav.Link>
     </Nav.Item>
+
     <Nav.Item>
-      <Nav.Link href="/competitionlists"> Competitions/Awards</Nav.Link>
+      <Nav.Link href="/awards">Awards</Nav.Link>
     </Nav.Item>
-    <Nav.Item>
-      <Nav.Link href="/message"> Community Message Board</Nav.Link>
-    </Nav.Item>
-    <Nav.Item>
-      <Nav.Link href="/donations"> Contact </Nav.Link>
-    </Nav.Item>
+ 
   </Nav>
  
   

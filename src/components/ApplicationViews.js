@@ -8,6 +8,9 @@ import { Steps } from "./progress/ProgressBar"
 import {CompetitionProvider} from "./competition/CompetitionProvider"
 import { CompetitionList } from "./competition/CompetitionList"
 import { Home } from "./home/Home"
+import { AwardProvider } from "./awards/AwardProvider"
+import { AwardsList } from "./awards/AwardsList"
+
 
 
 export const ApplicationViews = () => {
@@ -19,6 +22,7 @@ export const ApplicationViews = () => {
 
 <NoteProvider>
     <CompetitionProvider>
+        <AwardProvider>
         <Route exact path="/studentnotes">
             <LessonNoteList/>
             </Route>
@@ -33,6 +37,10 @@ export const ApplicationViews = () => {
         <Route exact path="/competitionlists">  
             <CompetitionList />
         </Route>
+        <Route exact path="/awards">  
+            <AwardsList />
+        </Route>
+        </AwardProvider>
     </CompetitionProvider>
 </NoteProvider>       
                 <main style={{
