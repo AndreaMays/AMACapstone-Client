@@ -22,8 +22,15 @@
     font-weight: bolder;
     display: flex;
     justify-content: center;
+    
 }
 
+.note_header_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
 .note_toggle {
     width: 400px;
     height: 260px;
