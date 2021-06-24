@@ -4,6 +4,7 @@ import { ApplicationViews } from "./ApplicationViews"
 import { NavBar } from "./nav/NavBar"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
+import { Logout } from "./auth/Logout"
 
 export const AllegroMusic = () => (
     <>
@@ -20,5 +21,6 @@ export const AllegroMusic = () => (
 
         <Route path="/login" render={Login} />
         <Route path="/register" render={Register} />
+        <Route path="/logout" render={Logout} />
     </>
 )

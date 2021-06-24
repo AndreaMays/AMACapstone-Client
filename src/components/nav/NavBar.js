@@ -23,6 +23,9 @@ export const NavBar = (props) => {
       <Nav.Link href="/awards">Awards</Nav.Link>
     </Nav.Item>
  
+    <Nav.Item>
+      <Nav.Link href="/LogOut">LogOut</Nav.Link>
+    </Nav.Item>
   </Nav>
  
   
