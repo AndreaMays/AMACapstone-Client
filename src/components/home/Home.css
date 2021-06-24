@@ -1,5 +1,5 @@
 .home {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-family: Georgia, 'Georgia', Times, serif; 
     font-weight: bold;  
     font-size: 30pt;
     display: flex;
@@ -10,7 +10,33 @@
     display: flex;
     flex-basis: 5%;
     margin: 1em;
-    padding: 1em;
-    border: 1px solid blue;
+    padding: 0.5em;
+    border: 7px solid white;
     justify-content: center;
+    box-shadow: 4px 4px 20px black;
+    transition: 0.5s;
+    border-radius: 10px;
+    width: 400px
+}
+
+.homeHeader {
+    color: white;
+    /* background: rgb(32, 32, 32); */
+    
+}
+
+.musicHome {
+
+    /* background-image: url("https://www.ppt-backgrounds.net/thumbs/old-music-note-photo-slides.jpeg"); */
+    background-image: url("https://cdn.wallpapersafari.com/75/47/RFDfyI.jpg");
+    /* background-image: url("https://wallpaperaccess.com/full/1162826.jpg"); */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'Georgia', Times, serif;
+    font-weight: bold;   
+ 
 }

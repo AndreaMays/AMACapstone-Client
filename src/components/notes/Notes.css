@@ -2,14 +2,13 @@
     width: 500px;
 }
 
-.weeklyMenuCard {
+.weeklyLessonCard {
     display: block;
     flex-basis: 28%;
     margin: 1em;
     padding: 1em;
     border: 1px solid blue;
-    flex-direction: row;
-
+    flex-wrap: wrap;
 }
 
 .notes {
@@ -26,10 +25,13 @@
 }
 
 .note_header_title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Patrick Hand', cursive;
     font-weight: bolder;
     display: flex;
     justify-content: center;
+    font-size: 40pt;
+    background-color: rgb(224, 217, 178);
+    color: black;
 }
 .note_toggle {
     width: 400px;
@@ -50,4 +52,12 @@
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
     font-size: larger; 
+}
+
+.noteList {
+    background-image: url("https://www.nicepng.com/png/detail/869-8692688_musica-hi-res-music-notes.png");
+}
+
+.piano_pic1 {
+    height: 200px;
 }
