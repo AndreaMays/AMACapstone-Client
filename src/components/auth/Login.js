@@ -10,7 +10,7 @@ export const Login = props => {
     const handleLogin = (event) => {
         event.preventDefault()
 
-        return fetch("http://127.0.0.1:8000/login", {
+        return fetch("https://ama-student-portal.herokuapp.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
