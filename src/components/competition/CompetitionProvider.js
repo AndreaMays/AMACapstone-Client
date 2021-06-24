@@ -16,6 +16,17 @@ export const CompetitionProvider = (props) => {
             .then(setCompetitions)
         }
     
+    // const getCompetitions = () => {
+
+    //     return fetch("http://localhost:8000/competitionlists", {
+    //         headers:{
+    //             "Authorization": `Token ${localStorage.getItem("lu_token")}`
+    //         }
+    //     })
+    //         .then(response => response.json())
+    //         .then(setCompetitions)
+    //     }
+    
     const updateCompetition = (competitionObj) => {
         return fetch(`https://ama-student-portal.herokuapp.com/competitionlists${competitionObj.id}`, {
             method: "PUT",

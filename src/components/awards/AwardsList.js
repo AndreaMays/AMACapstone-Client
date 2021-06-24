@@ -3,6 +3,7 @@ import { useHistory } from "react-router"
 import { AwardContext } from "./AwardProvider"
 import { StudentUserContext } from "../studentUser/StudentProvider"
 import { Card } from "react-bootstrap"
+import "./Awards.css"
 
 export const AwardsList = () => {
 
@@ -16,7 +17,7 @@ return (
     <>
     <article className="awardList">
         <header className="award_header">
-            <h2 className="award_title">Student Competition Info </h2>
+            <h2 className="award_title">Award Info </h2>
         </header>
 
 {
@@ -26,8 +27,8 @@ return (
 
 
  return <Card style={{ width: '18rem' }}>
-       <section key={a.id} className="awardList"></section>
-  <Card.Body >
+       <section key={a.id}> </section>
+  <Card.Body className="awardCard" >
   <Card.Title>Name of Comp: {a.name_of_comp}</Card.Title>
   <Card.Subtitle className="mb-2 text-muted">Name: {a.student_user.user.first_name} {a.student_user.user.last_name} </Card.Subtitle>
  

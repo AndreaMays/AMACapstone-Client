@@ -16,11 +16,12 @@ console.log("Comp", competitions)
 
 return (
     <>
-    <article className="noteList">
+    <article>
         <header className="notes_header">
-            <h2 className="note_header">Student Competition Info </h2>
+            <h2 className="comp_header">Student Competition Info </h2>
         </header>
 
+<section   className="competitionList">
 {
     competitions
     ?
@@ -32,7 +33,8 @@ return (
 
 
  return <Card style={{ width: '18rem' }}>
-       <section key={competition.id} className="compNotes"></section>
+
+       <section key={competition.id} className="competitionCard"></section>
   <Card.Body >
   <Card.Title>Name of Comp: {competition.name_of_comp}</Card.Title>
   <Card.Subtitle className="mb-2 text-muted">Name: {competition.student_user.user.first_name} {competition.student_user.user.last_name} </Card.Subtitle>
@@ -51,7 +53,7 @@ return (
 })
 :<div>loading</div>
 }
-
+</section>
 </article>
 
 </>

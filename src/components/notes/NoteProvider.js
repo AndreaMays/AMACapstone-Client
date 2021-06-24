@@ -15,6 +15,17 @@ export const NoteProvider = (props) => {
             .then(response => response.json())
             .then(setNotes)
         }
+
+        // return fetch("http://localhost:8000/studentnotes", {
+        //     headers:{
+        //         "Authorization": `Token ${localStorage.getItem("lu_token")}`
+        //     }
+        // })
+        //     .then(response => response.json())
+        //     .then(setNotes)
+        // }
+
+        
     
     const updateNote = (noteObj) => {
         return fetch(`https://ama-student-portal.herokuapp.com/studentnotes/${noteObj.id}`, {

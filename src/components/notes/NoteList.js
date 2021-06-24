@@ -22,7 +22,7 @@ export const LessonNoteList = (prop) => {
             <header className="notes_header">
                 <img class="piano_pic1" src="https://images.squarespace-cdn.com/content/v1/5346bffee4b0c33a173cb5ac/1431091455266-GFC9T77JU9CQGNLYW3O3/ke17ZwdGBToddI8pDm48kN68_zcfjFZkWPqKjCmxL3dZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PINkM-dKYsswEVcZeKKkMnnsAcG5BqBMTl3yv2oxfyt5gKMshLAGzx4R3EDFOm1kBS/img-banner-hands-playing-piano.jpg?format=2500w" alt="" width="5000" height="300"/>  
                 <br></br>      
-              </header>
+            </header>
         </section>
 
   {

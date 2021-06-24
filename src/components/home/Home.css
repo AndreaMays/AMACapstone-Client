@@ -13,12 +13,25 @@
     padding: 0.5em;
     border: 7px solid white;
     justify-content: center;
-    box-shadow: 4px 4px 20px black;
+    box-shadow: 4px 4px 10px darksalmon;
     transition: 0.5s;
     border-radius: 10px;
-    width: 400px
+    width: 400px;
+    height: 250px;
 }
-
+.piano_pic2 {
+    width: 360px;
+    height: 250px;
+    display: flex;
+    flex-basis: 5%;
+    margin: 1em;
+    padding: 0.5em;
+    border: 7px solid white;
+    justify-content: center;
+    box-shadow: 4px 4px 10px darksalmon;
+    transition: 0.5s;
+    border-radius: 10px;
+}
 .homeHeader {
     color: white;
     /* background: rgb(32, 32, 32); */
@@ -32,11 +45,18 @@
     /* background-image: url("https://wallpaperaccess.com/full/1162826.jpg"); */
 }
 
-.card-body {
+.homeOne {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     font-family: 'Georgia', Times, serif;
     font-weight: bold;   
  
 }
+
+.homeOne_practice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10pt;
+    }
+

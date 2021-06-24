@@ -2,7 +2,7 @@
     width: 500px;
 }
 
-.weeklyLessonCard {
+.awardCard {
     display: block;
     flex-basis: 28%;
     margin: 1em;
@@ -24,16 +24,13 @@
     
 }
 
-.note_header_title {
-    font-family: 'Patrick Hand', cursive;
+.award_title {
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     font-size: 40pt;
-    /* background-color: black; */
-    color: whitesmoke;
-    z-index: 2;
-    position: absolute;
+    color: black;
  
 }
 .note_toggle {
@@ -57,7 +54,7 @@
     font-size: larger; 
 }
 
-.noteList {
+.awardList {
     background-image: url("https://www.nicepng.com/png/detail/869-8692688_musica-hi-res-music-notes.png");
 }
 

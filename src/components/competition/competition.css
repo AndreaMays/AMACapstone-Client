@@ -1,6 +1,19 @@
-.card-body {
-    transition: 0.5s;
-    border-radius: 10px;   
-    flex-direction: row;
-    border-color: brown;
+.competitionCard {
+    display: block;
+    flex-basis: 28%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid blue;
+    flex-wrap: wrap;
+}
+
+.competitionList {
+    background: url("https://www.nicepng.com/png/detail/869-8692688_musica-hi-res-music-notes.png");
+}
+
+.comp_header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
