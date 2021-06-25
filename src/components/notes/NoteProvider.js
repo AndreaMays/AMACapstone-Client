@@ -26,7 +26,7 @@ export const NoteProvider = (props) => {
         // }
 
         
-    
+    // not using this function currently
     const updateNote = (noteObj) => {
         return fetch(`https://ama-student-portal.herokuapp.com/studentnotes/${noteObj.id}`, {
             method: "PUT",
