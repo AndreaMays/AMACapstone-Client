@@ -17,8 +17,9 @@ console.log("Comp", competitions)
 return (
     <>
     <article>
-        <header className="notes_header">
-            <h2 className="comp_header">Student Competition Info </h2>
+        <header className="comp_header">
+            <h2 className="comp_header_title">Student Competition Info </h2>
+            <img class="piano_pic3" src="https://cdn.pixabay.com/photo/2016/03/06/05/03/piano-1239729__480.jpg" alt="" />
         </header>
 
 <section   className="competitionList">
@@ -27,15 +28,11 @@ return (
     ?
     competitions.map(competition => {
         {console.log("HELP", competition)}
-        // <section>
-        // <div>{competition.date}</div>
-        // </section>
-
 
  return <Card style={{ width: '18rem' }}>
+<div > 
 
-       <section key={competition.id} className="competitionCard"></section>
-  <Card.Body >
+  <Card.Body className="compCard">
   <Card.Title>Name of Comp: {competition.name_of_comp}</Card.Title>
   <Card.Subtitle className="mb-2 text-muted">Name: {competition.student_user.user.first_name} {competition.student_user.user.last_name} </Card.Subtitle>
  
@@ -49,6 +46,7 @@ return (
     {/* <Card.Link href="#">Card Link</Card.Link>
     <Card.Link href="#">Another Link</Card.Link> */}
   </Card.Body>
+  </div>    
 </Card> 
 })
 :<div>loading</div>

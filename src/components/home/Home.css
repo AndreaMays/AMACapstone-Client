@@ -1,23 +1,37 @@
 .home {
-    font-family: Georgia, 'Georgia', Times, serif; 
-    font-weight: bold;  
-    font-size: 30pt;
-    display: flex;
-    justify-content:  center;
-}
 
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    margin-left: 60px;
+    padding: 225px;
+    text-align: center;
+    font-size: 40pt;
+    color: white;
+    position: absolute;
+    z-index: 20;
+    /* opacity: .3; */
+    height: 50px;
+} 
+.piano_pic_header {
+ height:300px;
+ position: relative;
+ background-color: black;
+ display: flex;
+ justify-content: center;
+}
 .piano_pic {
-    display: flex;
-    flex-basis: 5%;
-    margin: 1em;
-    padding: 0.5em;
-    border: 7px solid white;
-    justify-content: center;
-    box-shadow: 4px 4px 10px darksalmon;
-    transition: 0.5s;
-    border-radius: 10px;
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    opacity: .8;
+    object-position: center;
+    object-fit: cover;
+    height: 300px;
+    border: 2px solid black;
+    background-color: black;
+}
+.piano_pic::after{
+ height: 200px;
+ width: 500px;
+ background-color: yellow;
 }
 .piano_pic2 {
     width: 360px;
@@ -33,16 +47,21 @@
     border-radius: 10px;
 }
 .homeHeader {
-    color: white;
+    color:black;
     /* background: rgb(32, 32, 32); */
     
 }
 
 .musicHome {
 
+   
     /* background-image: url("https://www.ppt-backgrounds.net/thumbs/old-music-note-photo-slides.jpeg"); */
-    background-image: url("https://cdn.wallpapersafari.com/75/47/RFDfyI.jpg");
+    /* background-image: url("https://image.freepik.com/free-vector/abstract-background-with-golden-music-notes_1048-1516.jpg"); */
+    /* background-image: url("https://cdn.wallpapersafari.com/75/47/RFDfyI.jpg"); */
     /* background-image: url("https://wallpaperaccess.com/full/1162826.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 1250px 1300px;
+
 }
 
 .homeOne {
@@ -58,5 +77,16 @@
     justify-content: center;
     align-items: center;
     padding: 10pt;
+
     }
 
+.card {
+    box-shadow: 4px 4px 4px darkgray;
+    transition: 0.5s;
+}
+
+.homeCards {
+    display: flex;
+    flex-wrap: row-wrap;  
+    justify-content: space-evenly;
+}

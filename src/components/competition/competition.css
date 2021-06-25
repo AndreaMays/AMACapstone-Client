@@ -11,9 +11,38 @@
     background: url("https://www.nicepng.com/png/detail/869-8692688_musica-hi-res-music-notes.png");
 }
 
-.comp_header {
+.comp_header_title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    margin-left: 60px;
+    padding: 30px;
+    text-align: center;
+    font-size: 40pt;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 2;
+}
+
+.compHeader {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
     display: flex;
     justify-content: center;
+    
+}
+
+.piano_pic3 {
+    height: 200px;
+    width: 1100px;
+    /* opacity: .8; */
+    margin: 1em;
+    padding: -10em;
+    position: relative;
+}
+
+.commpCard {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    border: 1px solid blue;
 }

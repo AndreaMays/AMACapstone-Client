@@ -15,10 +15,13 @@ useEffect(() => {
 
 return (
     <>
-    <article className="awardList">
+    <article>
         <header className="award_header">
             <h2 className="award_title">Award Info </h2>
+            <img class="piano_pic1" src="https://c4.wallpaperflare.com/wallpaper/447/1023/658/piano-dark-cool-partial-wallpaper-preview.jpg" alt=""/>
         </header>
+
+<section   className="competitionList">
 
 {
     awards
@@ -26,8 +29,8 @@ return (
     awards.map(a => {
 
 
- return <Card style={{ width: '18rem' }}>
-       <section key={a.id}> </section>
+ return <Card className="row weeklyCard " style={{ width: '18rem' }}>
+       <section key={a.id} className="awardSection"> </section>
   <Card.Body className="awardCard" >
   <Card.Title>Name of Comp: {a.name_of_comp}</Card.Title>
   <Card.Subtitle className="mb-2 text-muted">Name: {a.student_user.user.first_name} {a.student_user.user.last_name} </Card.Subtitle>
@@ -48,7 +51,7 @@ return (
 })
 :<div>loading</div>
 }
-
+</section>
 </article>
 
 </>

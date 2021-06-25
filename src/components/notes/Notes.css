@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto&display=swap');
+
+
 .weeklyCard {
     width: 500px;
 }
@@ -7,12 +10,12 @@
     flex-basis: 28%;
     margin: 1em;
     padding: 1em;
-    border: 1px solid blue;
+    border: 3px solid blue;
     flex-wrap: wrap;
 }
 
 .notes {
-   font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-family: 'Playfair Display', serif;
    font-weight: bold;
 }
 
@@ -25,16 +28,15 @@
 }
 
 .note_header_title {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Playfair Display', serif;
     font-weight: bolder;
-    /* display: flex;
-    justify-content: center; */
+    margin-left: 60px;
+    padding: 30px;
+    text-align: center;
     font-size: 40pt;
-    /* background-color: black; */
     color: whitesmoke;
-    z-index: 2;
     position: absolute;
- 
+    z-index: 2;
 }
 .note_toggle {
     width: 400px;
@@ -64,4 +66,10 @@
 .piano_pic1 {
     height: 200px;
     opacity: .8;
+    margin: 1em;
+    padding: 1em;
+    position: relative;
+    width: 1200px;
+    height: 200px
 }
+

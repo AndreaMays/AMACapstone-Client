@@ -1,37 +1,60 @@
-import {Card, Row, Col, Image, Carousel} from 'react-bootstrap'
+import {Card, Row, Col, Image, Container} from 'react-bootstrap'
 import "./Home.css"
 
 
 export const Home = () => (
 <>
 <article className="musicHome">
-    <section className="homeHeader">
-        <div className="home">The A.M.A. Student Portal</div>
-    </section>
- 
+    <header className="homeHeader">
+        <h2 className="home">The A.M.A. Student Portal</h2>
+        <div className="piano_pic_header">
+            <img class="piano_pic" src="https://www.parentingscience.com/images/Music-intelligence-piano-girl-teacher-by-greenleaf-123-500x-min.jpg" alt=""/>
+        </div>
+    </header>
+ <br></br>
 
     <section>
-        <div class="homeOne" >
-            <img class="piano_pic" src="https://www.un.org/sites/un2.un.org/files/unesco-piano.jpg" alt="" width="300" height="300" />
-    
-            <div className="homeOne_practice" >
-                <Card style={{ width: '35rem', height: '2.5rem'}}>
-                View all of your practice lesson notes on this site in "Lesson Notes"</Card>
-                </div>
-            </div>
+        <div className ="homeCards">
+    <Card style={{ width: '18rem' }}>
+  <Card.Body>
+    <Card.Title>Practice</Card.Title>
+    <Card.Text>
+        No more printing lesson notes. Head over to the "Lesson Note" tab to now view your weekly assignments
+    </Card.Text>
+    {/* <Button variant="primary">Notes</Button> */}
+  </Card.Body>
+  <Card.Img variant="top" src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80/171x180" />
+</Card>
+<br></br>
+    <Card style={{ width: '18rem' }}>
+  <Card.Body>
+    <Card.Title>Awards</Card.Title>
+    <Card.Text>
+        Keep track of all the awards and honors you've earned in piano
+    </Card.Text>
+    {/* <Button variant="primary">Notes</Button> */}
+  </Card.Body>
+  <Card.Img variant="top" src="https://images.unsplash.com/photo-1514820720301-4c4790309f46?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXdhcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" />
+</Card>
+<br></br>
+    <Card style={{ width: '18rem' }}>
+  <Card.Body>
+    <Card.Title>Competitions</Card.Title>
+    <Card.Text>
+        Now you can keep track of all your competitions and scores throughout your musical journey.
+    </Card.Text>
+    {/* <Button variant="primary">Notes</Button> */}
+  </Card.Body>
+  <Card.Img variant="top" src="https://superkidz.com/wp-content/uploads/2015/11/busy4.jpg" />
+</Card>
+<br></br>
 
-        <div class="homeOne" >
-           <img class="piano_pic2" src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" width="300" height="300" />
-           
-           <div className="homeOne_practice" >
-                <Card className="homeCard" style={{ width: '35rem', height: '2.5rem'}}>
-                View all of your comps & awards in "Competitions" and "Awards"</Card>
-                </div>
-        </div>
+</div>
 
 
-        {/* <img class="piano_pic2" src="https://images.unsplash.com/photo-1571974599782-87624638275e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" alt="" width="300" height="300" /> */}
-        {/* <img class="piano_pic2" src="https://static.wixstatic.com/media/fcce0b3b6f2f4240b2d9de05e9b66ddb.jpg/v1/fill/w_640,h_402,al_c,q_80,usm_0.66_1.00_0.01/fcce0b3b6f2f4240b2d9de05e9b66ddb.webp" alt="" width="300" height="300" /> */}
+
+     
+     
 
     </section>
 </article>
