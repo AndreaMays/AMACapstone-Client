@@ -41,7 +41,7 @@ export const Login = props => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>The Allegro Music Academy Student User Site</h1>
+                    <h1>The Allegro Music Academy Student Portal</h1>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input ref={email} type="email" id="email" className="form-control"  placeholder="Email address" required autoFocus />
