@@ -62,12 +62,12 @@ export const Register = (props) => {
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Register an account</h1>
                 <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
-                    <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
+                    <label htmlFor="firstName"> Student First Name </label>
+                    <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="Student First Name" required autoFocus />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="lastName"> Last Name </label>
-                    <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Last name" required />
+                    <label htmlFor="lastName">Student Last Name </label>
+                    <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Student Last Name" required />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="birthdate"> Birth Date </label>
@@ -83,7 +83,7 @@ export const Register = (props) => {
                 </fieldset>
                 <fieldset>
                     <label htmlFor="phone_number"> Phone Number </label>
-                    <textarea ref={phonenumber} name="phonenumber" className="form-control" placeholder="Please enter Parent(s) First Name" />
+                    <textarea ref={phonenumber} name="phonenumber" className="form-control" placeholder="Please enter phone number (000-000-0000)" />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
