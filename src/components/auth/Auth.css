@@ -54,6 +54,7 @@
     height: 609px;
     /* border: 2px solid black;
     background-color: white; */
+    z-index: -999;
 }
 
 .pic4Header {
