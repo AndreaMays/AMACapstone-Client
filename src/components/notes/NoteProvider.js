@@ -15,15 +15,17 @@ export const NoteProvider = (props) => {
             .then(response => response.json())
             .then(setNotes)
         }
-
-        // return fetch("http://localhost:8000/studentnotes", {
-        //     headers:{
-        //         "Authorization": `Token ${localStorage.getItem("lu_token")}`
-        //     }
-        // })
-        //     .then(response => response.json())
-        //     .then(setNotes)
-        // }
+    
+    
+    // const getNotes = () => {
+    //     return fetch("http://localhost:8000/studentnotes", {
+    //         headers:{
+    //             "Authorization": `Token ${localStorage.getItem("lu_token")}`
+    //         }
+    //     })
+    //         .then(response => response.json())
+    //         .then(setNotes)
+    //     }
 
         
     // not using this function currently
